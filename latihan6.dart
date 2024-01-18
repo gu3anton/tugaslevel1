@@ -15,9 +15,6 @@ void main() {
 }
 */
 
-//import '../utilities/utilities.dart';
-//import dart.html;
-
 const _arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 void main(List<String> args) {
@@ -27,7 +24,12 @@ void main(List<String> args) {
       _result.add(element);
     }
   }
-  print(_result);
+
+  final _even = _arr.where((element) => element.isEven).toList();
+  print(_even);
+  final _odds = _arr.where((element) => element.isOdd).toList();
+  print(_odds);
 }
 
 bool isEven(int number) => number % 2 == 0;
+bool isOdd(int number) => !isEven(number);
