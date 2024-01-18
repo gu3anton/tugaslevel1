@@ -9,6 +9,5 @@ void findPerimeter(int length, int breadth) {
   print('The perimeter is $perimeter');
 }
 
-int findArea(int length, int breadth) {
-  return length * breadth;
-}
+// short expresion
+int findArea(int length, int breadth) => length * breadth;
